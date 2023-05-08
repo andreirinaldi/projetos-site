@@ -1,0 +1,61 @@
+/**** cenário do game ****/
+html {
+	cursor: url(imagens/mata_mosca.png) 30 30, auto;   /* alterando o cursor */
+}
+
+body {
+	background-image: url(imagens/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.painel {
+	position: absolute;
+	width: 190px;
+	padding: 10px;
+	left: 0px;   /* colando o barra de vidas na esquerda da tela */
+	bottom: 0px;   /* colando o barra de vidas na base da tela */
+	border-top: solid 1px #fff;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.vidas {
+	float: left;   /* flutuando a esquerda */
+}
+
+.cronometro {
+	float: left;   /* flutuando a esquerda */
+	font-size: 20px;
+	font-weight: bold;   /* texto em negrito */
+}
+
+
+
+/**** tamanhos de mosquitos gerados ****/
+
+.mosquito1 {
+	width: 50px;
+	height: 50px;
+}
+
+.mosquito2 {
+	width: 70px;
+	height: 70px;
+}
+
+.mosquito3 {
+	width: 90px;
+	height: 90px;
+}
+
+
+/**** lados dos mosquitos gerados ****/
+
+.ladoA {   /* a imagem ja esta nessa direção por isso não necessita declarar parâmetros aqui */
+	transform: scaleX(1);
+}
+
+.ladoB {    /* virando o mosquito para a direção contrária da imagem */
+	transform: scaleX(-1);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Game Mata-Mosquito</title>
+
+		<link rel="stylesheet" href="estilo.css">
+
+		<script src="jogo.js"></script>
+
+	</head>
+
+	<body onresize="ajustaTamanhoJogo()">    <!-- 01 - definindo tamanho dinâmico da página -->
+
+		<div class="painel">    <!-- 07 - criando o cenário do game -->
+			<div class="vidas">    <!-- 07 -->
+				<img id="v1" src="imagens/coracao_cheio.png">
+				<img id="v2" src="imagens/coracao_cheio.png">
+				<img id="v3" src="imagens/coracao_cheio.png">
+			</div>
+
+			<div class="cronometro">    <!-- 07 -->
+				Tempo restante: <span id="cronometro"></span>    <!-- 10 - span chamando a função cronômetro -->
+			</div>
+		</div>
+
+		<script>    // 03 - fazendo a chamada do srcipt dentro do body para evitar erros
+
+			document.getElementById('cronometro').innerHTML = tempo    // 10 - inserção do cronômetro de maneira dinâmica
+
+		    var criaMosquito = setInterval(function() {   // 06 - gerando o timer de geração dos mosquitos | 10 - criando a var 'criaMosquito'
+			    posicaoRandomica()    // 03
+		    }, criaMosquitoTempo)    // 13 - substituindo um valor fixo pela variavel de tempo 'criaMosquitoTempo'
+
+		</script>
+
+	</body>
+</html>

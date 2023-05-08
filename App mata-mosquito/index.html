@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Página Inicial</title>
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="estilo.css">
+
+		<script>     // 12 - função para controlar os níveis de dificuldade
+			function iniciarJogo() {
+				var nivel = document.getElementById('nivel').value     // 12 - buscando as opcões de nível de dificuldade
+
+				if(nivel === '') {     // 12 - verificando o o jogador escolheu uma das opções válidas
+					alert('Selecione um nível para jogar')     // 12 - alerta caso o player escolha a opção 'Selecione o nível'
+					return false     // 12 - encerrando a function com 'false'
+				}
+
+		        window.location.href = "app.html?" + nivel   // 13 - passando para a pág do game 'app.html' assim que o nível for selecionado
+		        // '?' serve para separar a página declarada dos parâmetros declarados
+
+			}
+		</script>
+
+	</head>
+
+	<body>
+		<div class="container">    <!-- 12 - Criação da página Inicial -->
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+					<img src="imagens/game.png">
+					</div>
+				</div>
+			</div>
+
+			<div class="row">    <!-- 12 - inserindo a opção de de níveis -->
+				<div class="col">
+					<div class="d-flex justify-content-center">
+						<div class="mb-2">   <!-- 12 - colocando uma margem entre os botões -->
+				  		    <select class="form-control" id="nivel">   <!-- 12 - criando o 'id=nivel' para chamar os niveis de dificuldade -->
+							    <option value="">-- Selecione o nível --</option>
+							    <option value="normal">Normal</option>
+							    <option value="dificil">Difícil</option>
+							    <option value="chucknorris">Chuck Norris</option>
+						    </select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col">
+					<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-danger btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+					</div>
+				</div>
+
+		</div>
+
+	</body>
+</html>
