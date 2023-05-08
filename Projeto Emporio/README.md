@@ -1,3 +1,3 @@
 # Projeto Empório
 
-## Homepage site d evendas com cadastro simples.
+## Homepage site de vendas com cadastro simples.
