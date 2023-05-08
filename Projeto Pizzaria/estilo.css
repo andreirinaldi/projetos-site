@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+    --first-color: #4f4f4f;
+    --second-color: #dae2eb;
+    --third-color: #f21160;
+    --text-color: #fff;
+  }
+  
+
+/* ------------- Cabeçalho ------------- */
+.logo {
+    width: 75px;
+}
+section {
+    padding-top: 3rem;
+    position: relative;
+    background-color: bisque;
+}
+li.nav-item a.btn {
+    font-weight: 600;
+    border-radius: 2rem;
+    font-size: 1.1rem;
+}
+
+/* ------------- Menu Localização ------------- */
+.box {
+    padding: 0;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    height: 80vh;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
+	background: var(--second-color);
+    border-radius: 2rem;
+}
+.caixa1 {
+	display: flex;
+	flex-direction: column;
+    width: 40%;
+	background-color: var(--text-color);
+	padding: 3rem;
+    border-radius: 2rem 2rem;
+}
+.caixa2 {
+	display: flex;
+    width: 60%;
+	justify-content: center;
+	align-items: center;
+    margin-left: -1rem;
+	background-color: #fde3a7;
+    border-radius: 0.8rem;
+	padding: 1rem;
+}
+.caixa2 img {
+    max-width: 62rem;
+    border-radius: 2rem;
+}
+div.caixa1 h1, div.caixa1 h5, div.caixa1 span, div.caixa1 a.btn {
+    margin-left: 2rem;
+}
+div.caixa1 h1 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--third-color);
+    border-top: 2px solid var(--third-color);
+    border-bottom: 2px solid var(--third-color);
+    margin-top: 1.2rem;
+}
+div.caixa1 h5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.1em;
+    color: var(--first-color);
+}
+div.caixa1 span {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--first-color);
+}
+div.caixa1 i {
+    margin-right: 0.5rem;
+}
+div.caixa1 a.btn {
+    width: 120px;
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--third-color);
+    border: 2px solid var(--third-color);
+}
+.margem {
+    position: static;
+    margin-bottom: 7%;
+}
+
+/* ------------- Menu Pizzas ------------- */
+
+.box2 {
+    position: relative;
+    display: flex;
+    margin: auto;
+	background: url(img/gourmet-food-pizza.jpg) no-repeat top;
+    background-size: 100%;
+    border: 20px solid var(--text-color);
+    border-bottom: none;
+    border-radius: 2rem 2rem 0 0;
+    width: 80%;
+}
+div.box2 h1 {
+    display: flex;
+    color: #dc3d37;
+    text-shadow: 2px 2px var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 7rem;
+    letter-spacing: 7px;
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+.aviso {
+    text-align: center;
+    margin: -1rem 0 3rem 0;
+    padding: 0.4rem;
+    background-color: rgb(233, 248, 211);
+    border: 2px solid #187d15;
+    border-radius: 2rem;
+}
+div.aviso span {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 500;
+    color: #187d15;
+    font-size: 1.4rem;
+}
+.box3 {
+    border: 20px solid var(--text-color);
+    border-bottom: none;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 80%;
+	background: url(img/Fundo-Cardápio-Pizza-escuro.jpg) no-repeat top;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 4rem;
+}
+div.menu h5 {
+    margin-top: 1rem;
+    color: darkorange;
+}
+
+/* ------------- Menu Preços ------------- */
+.box4 {
+    margin: auto;
+    width: 80%;
+	background: #292b29;
+    border-radius: 0 0 2rem 2rem;
+    border: 20px solid var(--text-color);
+    color: var(--text-color);
+}
+.pedidos {
+    padding-top: 3rem;
+}
+.aviso2 {
+    text-align: center;
+    background: url(img/gourmet-food-pizza.jpg) no-repeat center;
+    background-size: 100%;
+    border: 2px solid #dc3d37;
+    border-radius: 2rem;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+div.pedidos h4, div.pedidos h5, div.pedidos h6, div.pedidos span {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+div.pedidos h5 strong {
+    color: var(--third-color);
+}
+div.pedidos h4 {
+    color: darkorange;
+    margin-bottom: 0.7rem;
+    border-bottom: 1px solid darkorange;
+}
+div.pedidos h1 {
+    color: #dc3d37;
+    font-family:'Courier New', Courier, monospace;
+    margin-top: 0.6rem;
+}
+.tamanho {
+    margin-top: 0.7rem;
+}
+
+/* ------------- Nossa história ------------- */
+.coluna1 {
+    width: 50%;
+}
+.coluna2 {
+    width: 50%;
+}
+#box5 {
+    width: 100.8%;
+    display: flex;
+    position: relative;
+    background-color: var(--text-color);
+    margin-top: 3%;
+}
+#box5 .redondo, #historia {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#box5 .redondo {
+    width: 580px;
+    height: 580px;
+    border-radius: 300px;
+    margin-left: 275px;
+}
+#historia {
+    border: 1px solid #000;
+    border-radius: 25px;
+    text-align: center;
+    padding: 75px 40px 75px 40px ;
+    margin-right: 275px;
+}
+#historia h2 {
+    font-family: 'Poppins', sans-serif;
+}
+#historia p {
+    margin-top: 6%;
+    text-align: justify-all;
+    font-style: italic;
+}
+.logo2 {
+    width: 120px;
+}
+
+/* ------------- Rodapé ------------- */
+footer ul {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+footer .nav-item a {
+    margin-left: 7rem;
+    margin-right: 7rem;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+.icone {
+	width: 50px;
+    padding-right: 5px;
+    margin-top: -0.4rem;
+}
+
+
+/* ---------- mediaquerys index --------*/
+@media screen and (max-width: 1700px) {
+    .caixa2 img {
+        max-width: 52rem;
+    }
+    div.box2 h1 {
+        font-size: 6rem;
+        letter-spacing: 6px;
+        margin-top: 7.5rem;
+        margin-bottom: 4rem;
+    }
+    #box5 .redondo {
+        margin-left: 200px;
+    }
+    #historia {
+        border: 1px solid #000;
+        border-radius: 25px;
+        text-align: center;
+        margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .box {
+        height: 75vh;
+    }
+    .caixa2 img {
+        max-width: 45rem;
+    }
+    div.box2 h1 {
+        font-size: 5rem;
+        letter-spacing: 5px;
+        margin-top: 7rem;
+        margin-bottom: 3.1rem;
+    }
+    #box5 .redondo {
+        margin-left: 100px;
+    }
+    #historia {
+        border: 1px solid #000;
+        border-radius: 25px;
+        text-align: center;
+        padding: 60px 35px 60px 35px ;
+        margin-right: 100px;
+    }
+    footer .nav-item a {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .box {
+        height: 70vh;
+    }
+    .caixa2 img {
+        max-width: 35rem;
+    }
+    div.box2 h1 {
+        font-size: 4.5rem;
+        letter-spacing: 4px;
+        margin-top: 6rem;
+        margin-bottom: 1rem;
+    }
+    div.box3 div.aviso span {
+        font-size: 1.1rem;
+    }
+    .aviso {
+        margin: -1rem 0 2rem 0;
+    }
+    div.pedidos h4, div.pedidos h5, div.pedidos h6, div.pedidos span {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .menu {
+        margin-bottom: 2rem;
+    }
+    #box5 .redondo {
+        width: 530px;
+        height: 530px;
+        margin-left: 50px;
+    }
+    #historia {
+        border: 1px solid #000;
+        border-radius: 25px;
+        text-align: center;
+        padding: 40px 30px 40px 30px ;
+        margin-right: 50px;
+    }
+    footer .nav-item a {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .box {
+        height: 65vh;
+    }
+    .caixa2 img {
+        max-width: 30rem;
+    }
+    div.box2 h1 {
+        font-size: 4rem;
+        letter-spacing: 4px;
+        margin-top: 4rem;
+        margin-bottom: 0;
+    }
+    div.box3 div.aviso span {
+        font-size: 1rem;
+    }
+    div.pedidos h4, div.pedidos h5, div.pedidos h6, div.pedidos span {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    #box5 .redondo {
+        margin-top: 13%;
+        width: 430px;
+        height: 430px;
+        margin-left: 40px;
+    }
+    #historia {
+        border: 1px solid #000;
+        border-radius: 25px;
+        text-align: center;
+        padding: 25px 10px 25px 10px ;
+        margin-right: 40px;
+    }
+    #historia p {
+        margin-top: 3%;
+    }
+    .logo2 {
+        width: 100px;
+    }
+    footer .nav-item a {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .caixa1 {
+        width: 100%;
+    }
+    .caixa2 {
+        display: none;
+    }
+    div.box2 h1 {
+        font-size: 3.5rem;
+        letter-spacing: 2px;
+        margin-top: 2.8rem;
+        margin-bottom: -1rem;
+    }
+    .aviso {
+        padding: 0;
+    }
+    div.pedidos h4, div.pedidos h5, div.pedidos h6, div.pedidos span {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .tamanho {
+        margin-top: 0.2rem;
+    }
+    .coluna1 {
+        display: none;
+    }
+    .coluna2 {
+        width: 80%;
+        padding-left: 40px;
+    }
+    footer .nav-item a {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .box, .box2, .box3, .box4 {
+        width: 90%;
+    }
+    div.box2 h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-top: 2.2rem;
+        margin-bottom: -1.5rem;
+    }
+    .box3 {
+        background-size: 200%;
+    }
+    .coluna2 {
+        width: 90%;
+    }
+    footer .nav-item a {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        font-size: 1rem;
+    }
+    .icone {
+        width: 40px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .box, .box2, .box3, .box4 {
+        width: 100%;
+    }
+    .box3 {
+        background-size: 250%;
+    }
+    .coluna2 {
+        width: 90%;
+    }
+    footer .nav-item a {
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        font-size: 1rem;
+    }
+    .icone {
+        width: 40px;
+    }
+}

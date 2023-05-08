@@ -1,0 +1,135 @@
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container justify-content-center">
+                
+                <a href="/" class="navbar-brand">
+                    <img src="/img/Emporio_rinaldi.png" id="imagem" class="ml-3">
+                </a>
+                
+            </div>
+        </nav>
+    </header>
+
+    <section id="cadastro">
+        <div class="container">
+            <div class="form-image">
+                <img src="/img/undraw_complete_design_re_h75h.svg">
+            </div>
+            <div class="form">
+                <form action="/registrar" method="post">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Cadastre-se</h1>
+                        </div>
+                    </div>
+                    <div class="input-group">
+
+                        <div class="input-box">
+                            <label for="firstname">Primeiro nome:</label>
+                            <input type="text" value="<?= $this->view->usuario['nome'] ?>" name="nome" placeholder="Digite seu primeiro nome">
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="lastname">Sobrenome:</label>
+                            <input type="text" value="<?= $this->view->usuario['sobrenome'] ?>" name="sobrenome" placeholder="Digite seu sobrenome">
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="email">E-mail:</label>
+                            <input type="email" value="<?= $this->view->usuario['email'] ?>" name="email" placeholder="Digite seu e-mail">
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="number">Celular:</label>
+                            <input type="tel" value="<?= $this->view->usuario['celular'] ?>" name="celular" placeholder=" (xx) xxxxx-xxxx">
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="password">Senha:</label>
+                            <input type="password" value="<?= $this->view->usuario['senha'] ?>" name="senha" placeholder="Digite sua senha">
+                        </div>
+                        
+                    </div>
+
+                    <div class="gender-inputs">
+
+                        <div class="gender-title">
+                            <h6>Gênero</h6>
+                        </div>
+
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="female" name="gender">
+                                <label for="female">Feminino</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="male" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="others" name="gender">
+                                <label for="others">Outros</label>
+                            </div>
+                            <div class="gender-input">
+                                <input type="radio" id="none" name="gender">
+                                <label for="none">Prefiro não dizer</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="continue-button">
+                        <button type="submit" class="btn">Inscrever-se</button>
+                    </div>
+
+                <?php if($this->view->erroCadastro) { ?>
+
+                <small class="form-text text-danger">*Erro ao tentar realizar o cadastro, verifique se os campos foram preenchidos corretamente.</small>
+
+                <?php } ?>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    
+        <footer class="marg">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container justify-content-center">
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item">
+                            <span class="titulo">Contatos:</span>
+                            <span class="nav-link mt-3">(XX) 00000-0000</span>
+                            <span class="nav-link">(XX) 00000-0000</span>
+                            <span class="nav-link">emporiorinaldi@mail.com</span>
+                            <a href="#" class="nav-link">Sobre a Empresa</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <span class="titulo">Minha Conta:</span>
+                            <a href="#" class="nav-link mt-3">Minha conta</a>
+                            <a href="#" class="nav-link">Meus pedidos</a>
+                            <a href="#" class="nav-link">Rastreamento</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <span class="titulo">Ajuda:</span>
+                            <a href="#" class="nav-link mt-3">Formas de Pagamento</a>
+                            <a href="#" class="nav-link">Prazos de entrega</a>
+                            <a href="#" class="nav-link">Regras de devolução</a>
+                            <a href="#" class="nav-link">Fornecedores</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <span class="titulo">Redes Sociais:</span>
+                            <a href="#" class="nav-link mt-3"><img src="/img/facebook.png" class="icone4">Facebook</a>
+                            <a href="#" class="nav-link"><img src="/img/twitter.png" class="icone4">Twitter</a>
+                            <a href="#" class="nav-link"><img src="/img/instagram.png" class="icone4">Instagran</a>
+                            <a href="#" class="nav-link"><img src="/img/whatsapp.png" class="icone4">WhatsApp</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </footer>

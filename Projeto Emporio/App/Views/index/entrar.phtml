@@ -1,0 +1,103 @@
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <div class="container justify-content-center">
+                
+                <a href="/" class="navbar-brand">
+                    <img src="/img/Emporio_rinaldi.png" id="imagem" class="ml-3">
+                </a>
+
+            </div>
+        </nav>
+    </header>
+
+    <section id="cadastro">
+        <div class="container">
+
+            <div class="form1">
+                <form method="post" action="/autenticar">
+                    <div class="form-header">
+                        <div class="title1">
+                            <h1>Entrar</h1>
+                        </div>
+                    </div>
+                    <div class="input-group1">
+                        <div class="input-box">
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email" placeholder="Digite seu e-mail" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="password">Senha:</label>
+                            <input type="password" name="senha" placeholder="Digite sua senha" required>
+                        </div>
+                    </div>
+                    <div class="continue-button">
+                        <button type="submit" class="btn">Entrar</button>
+                    </div>
+                    
+                    <?php if($this->view->login == 'erro') { ?>
+                        <div class="row">
+                            <div class="col">
+                                <span class="text text-danger">*E-mail e ou senha inválido(s)</span>
+                            </div>
+                        </div>
+                    <?php } ?>
+
+                    <div class="form-header">
+                        <div class="title2">
+                            <h1>Ainda não é cliente?</h1>
+                        </div>
+                    </div>
+                    <div class="continue-button">
+                        <a href="inscreverse" class="btn">Cadastre-se</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-image">
+                <img src="/img/undraw_join_re_w1lh.svg">
+            </div>
+
+        </div>
+    </section>
+    
+        <footer class="marg">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                <div class="container justify-content-center">
+                    <ul class="navbar-nav">
+    
+                        <li class="nav-item">
+                            <span class="titulo">Contatos:</span>
+                            <span class="nav-link mt-3">(XX) 00000-0000</span>
+                            <span class="nav-link">(XX) 00000-0000</span>
+                            <span class="nav-link">emporiorinaldi@mail.com</span>
+                            <a href="#" class="nav-link">Sobre a Empresa</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <span class="titulo">Minha Conta:</span>
+                            <a href="#" class="nav-link mt-3">Minha conta</a>
+                            <a href="#" class="nav-link">Meus pedidos</a>
+                            <a href="#" class="nav-link">Rastreamento</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <span class="titulo">Ajuda:</span>
+                            <a href="#" class="nav-link mt-3">Formas de Pagamento</a>
+                            <a href="#" class="nav-link">Prazos de entrega</a>
+                            <a href="#" class="nav-link">Regras de devolução</a>
+                            <a href="#" class="nav-link">Fornecedores</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <span class="titulo">Redes Sociais:</span>
+                            <a href="#" class="nav-link mt-3"><img src="/img/facebook.png" class="icone4">Facebook</a>
+                            <a href="#" class="nav-link"><img src="/img/twitter.png" class="icone4">Twitter</a>
+                            <a href="#" class="nav-link"><img src="/img/instagram.png" class="icone4">Instagran</a>
+                            <a href="#" class="nav-link"><img src="/img/whatsapp.png" class="icone4">WhatsApp</a>
+                        </li>
+    
+                    </ul>
+                </div>
+            </nav>
+        </footer>
