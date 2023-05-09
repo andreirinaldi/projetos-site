@@ -1,0 +1,592 @@
+/* ---------- Geral ---------- */
+:root {
+    --first-color: #1b1815;
+    --second-color: #dae2eb;
+    --third-color: #f05e54;
+    --text-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section {
+    font-family: 'Poppins', sans-serif;
+    padding-top: 80px;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ---------- Navbar topo ---------- */
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    height: 80px;
+}
+.navbar i {
+    color: var(--second-color);
+    font-size: 3.2rem;
+    margin-left: 1.6rem;
+}
+.navbar i:hover {
+    color: var(--text-color);
+    font-size: 3.8rem;
+}
+.navbar a.nav-link {
+    color: bisque;
+    font-size: 1.1rem;
+}
+.navbar a.nav-link:hover {
+    color: var(--second-color);
+}
+.collapse.show a {
+    transition: 0.8s;
+    padding-left: 1rem;
+}
+
+/* ---------- Sessão Sobre mim ---------- */
+#box1 {
+    display: flex;
+    justify-content: center;
+    background: var(--first-color);
+}
+.sobremim {
+	display: flex;
+    width: 80%;
+    height: 62vh;
+    margin: auto;
+    border: 1px solid var(--text-color);
+    border-radius: 40px;
+}
+#box-texto {
+	display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    color: #cc9895;
+}
+#box-texto h1, h4, p, a.btn {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#box-texto h1, #box-texto h4 {
+    font-family: 'Bruno Ace SC', cursive;
+}
+#box-texto h4 {
+    margin-bottom: 1.5rem;
+}
+#box-texto p {
+    color: #b0827f;
+}
+#box-texto a.btn {
+    margin-top: 3%;
+    color: var(--second-color);
+    background: #997c5f;
+}
+#box-texto a.btn:hover {
+    color: var(--first-color);
+    background: #76acb0;
+}
+#box-img {
+	display: flex;
+    width: 50%;
+    background-image: url(img/foto_portifolio.png), url(img/botoes4.png);
+    background-position: center left, right;
+    background-repeat: repeat-y, no-repeat;
+    background-size: 85%, 38%;
+    border-radius: 40px;
+}
+
+/* ---------- Sessão Portifólio ---------- */
+#box2 {
+    background-color: #755348;
+    position: relative;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+	align-items: center;
+    flex-direction: column;
+}
+.portifolio {
+	position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 62vh;
+    transition: max-height 0.4s ease;
+    margin: auto;
+    border: 1px solid var(--text-color);
+    border-radius: 40px;
+    background-color: #302827;
+}
+.portifolio h1 {
+    font-family: 'Bruno Ace SC', cursive;
+    color: var(--third-color);
+    border-bottom: 1px solid var(--text-color);
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.portifolio span.aviso {
+    display: flex;
+    background-color: #1b1815;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    justify-content: center;
+    margin-top: -7px;
+    margin-bottom: 2rem;
+}
+#box2 span.aviso2 {
+    font-size: 0.8rem;
+    color: var(--text-color);
+    position: relative;
+}
+.tab-tbn {
+	position: relative;
+	display: flex;
+}
+.caixa {
+    width: 50%;
+	overflow-x: hidden;
+	display: inline-block;
+	user-select: none;
+    white-space: normal;
+}
+.texto {
+    height: 140px;
+}
+.texto h4 {
+    margin: 25px 25px 15px 25px;
+    color: var(--third-color);
+}
+.texto p {
+    color: var(--second-color);
+    margin-left: 25px;
+}
+.botao {
+    margin-left: 125px;
+}
+.botao a.btn {
+    background-color: bisque;
+    color: var(--first-color);
+    width: 150px;
+    margin: 0;
+}
+.botao a.btn:hover {
+    background-color: var(--first-color);
+    color: var(--text-color);
+}
+.animacao {
+    display: flex;
+    padding-left: 25px;
+}
+.icones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 25px;
+}
+.icones i {
+    font-size: 3.5rem;
+    color:bisque;
+}
+.icones span {
+    font-size: 0.6rem;
+    color:bisque;
+}
+.box-projetos {
+    width: 98%;
+    height: 96%;
+    margin: auto;
+    z-index: 10;
+}
+.box-projetos:hover {
+    width: 100%;
+    height: 100%;
+}
+.img-projetos {
+    border-radius: 25px;
+    width: 100%;
+}
+
+/* ----- Borda animada ----- */
+.fundo-animated {
+    width: 500px;
+    height: 260px;
+    border: none;
+    border-radius: 25px;
+    background: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.fundo-animated::before {
+    border-radius: 25px;
+    background-image: conic-gradient( #302827, var(--third-color) 180deg, #302827, var(--third-color) , var(--third-color)  360deg );
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 260px;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: scale(2.5) rotate(0deg);
+    }
+    100% {
+        transform: scale(2.5) rotate(360deg);
+    }
+}
+/* ----- Menu deslizável ----- */
+.tab-menu {
+	overflow-x: auto;
+    white-space: nowrap;
+	scroll-behavior: smooth;
+}
+.tab-menu.dragging {
+	scroll-behavior: unset;
+	cursor: grab;
+}
+.tab-menu::-webkit-scrollbar {  /* -- Removendo scrollbar -- */
+	display: none;
+}
+.tab-menu.dragging .tab-btn {
+	pointer-events: none;
+}
+.left-btn, .right-btn {
+	position: absolute;
+	color: var(--text-color);
+	font-size: 1.8rem;
+    margin: 20px;
+	padding: 10px;
+	cursor: pointer;
+}
+.left-btn {
+	left: 0;
+	background: linear-gradient(to left, transparent, var(--text-color) 90%);
+	border-top-left-radius: 30px;
+	border-bottom-left-radius: 30px;
+	display: none;
+}
+.right-btn {
+	right: 0;
+	background: linear-gradient(to right, transparent, var(--text-color) 90%);
+    border-top-right-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+/* ---------- Sessão Habilidades ---------- */
+#box3 {
+    background: radial-gradient(#333, #000);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#habilidades {
+    background-color: #5e4947;
+    border-radius: 40px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    z-index: 2;
+}
+.linguagem {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--text-color);
+}
+.linguagem i {
+    font-size: 10rem;
+    text-shadow: 5px 5px #1b1815;
+    padding: 35px;
+    padding-bottom: 5px;
+}
+.barra {
+    width: 50%;
+    height: 5rem;
+    background: bisque;
+    margin-bottom: 2rem;
+    border-radius: 25px;
+    z-index: 1;
+}
+.barra h5 {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: 400;
+    border-radius: 25px 25px 0 0;
+    background-color: #5e4947;
+    z-index: 1;
+}
+.linguagem p {
+    position: absolute;
+    margin-left: 26%;
+    margin-right: 26%;
+    right: 0;
+    left: 0;
+    top: 49%;
+    font-size: 1rem;
+    visibility: hidden;
+}
+.html5:hover, .css3:hover, .bootstrap:hover, .js:hover, .php:hover {
+    color: var(--third-color);
+}
+.html5:hover p, .css3:hover p, .bootstrap:hover p, .js:hover p, .php:hover p {
+    color: #1b1815;
+    z-index: 2;
+    visibility: visible;
+}
+#box3 h4 {
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: 600;
+    background-color: var(--text-color);
+    text-align: center;
+    border-radius: 15px;
+}
+.conteudo {
+    z-index: 2;
+}
+.cursos {
+    background-color: #333;
+    width: 500px;
+    border: 1px solid var(--text-color);
+    border-radius: 25px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    color: var(--text-color);
+}
+.cursos h5 {
+    border-bottom: 1px solid var(--third-color);
+    margin-bottom: 1rem;
+    color: var(--third-color);
+}
+.cursos p {
+    margin-left: 1rem;
+    color: var(--second-color);
+    height: 100px;
+}
+.d-flex a {
+    margin-top: 0.5rem;
+    color: var(--second-color);
+    width: 10rem;
+}
+
+/* ---------- Fundo folhas caindo ---------- */
+.fundo-folhas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+div.fundo-folhas div {
+    position: absolute;
+    display: block;
+}
+div.fundo-folhas div:nth-child(1) {
+    left: 20%;
+    animation: folhas 15s linear infinite;
+    animation-delay: -7s;
+}
+div.fundo-folhas div:nth-child(2) {
+    left: 50%;
+    animation: folhas 20s linear infinite;
+    animation-delay: -5s;
+}
+div.fundo-folhas div:nth-child(3) {
+    left: 70%;
+    animation: folhas 20s linear infinite;
+    animation-delay: 0s;
+}
+div.fundo-folhas div:nth-child(4) {
+    left: 0%;
+    animation: folhas 15s linear infinite;
+    animation-delay: -5s;
+}
+div.fundo-folhas div:nth-child(5) {
+    left: 85%;
+    animation: folhas 18s linear infinite;
+    animation-delay: -10s;
+}
+div.fundo-folhas div:nth-child(6) {
+    left: 0%;
+    animation: folhas 22s linear infinite;
+}
+div.fundo-folhas div:nth-child(7) {
+    left: 15%;
+    animation: folhas 14s linear infinite;
+}
+div.fundo-folhas div:nth-child(8) {
+    left: 60%;
+    animation: folhas 16s linear infinite;
+}
+@keyframes folhas {
+    0% {
+        opacity: 0;
+        top: -10%;
+        transform: translateX(20px) rotate(0deg);
+    }
+    10% {
+        opacity: 1;
+    }
+    20% {
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40% {
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60% {
+        transform: translateX(20px) rotate(180deg);
+    }
+    80% {
+        transform: translateX(-20px) rotate(180deg);
+    }
+    100% {
+        top: 110%;
+        transform: translateX(-20px) rotate(225deg);
+    }
+}
+.set2 {
+    transform: scale(2) rotateY(180deg);
+    filter: blur(2px);
+}
+.set3 {
+    transform: scale(0.8) rotateX(180deg);
+    filter: blur(4px);
+}
+.set4 {
+    transform: scale(1.2) rotateX(180deg);
+}
+
+
+/* -- MediaQuerys -- */
+@media screen and (max-width: 1850px) {
+    .barra {
+        height: 7.4rem;
+    }
+    .linguagem p {
+        top: 48%;
+    }
+}
+@media screen and (max-width: 1520px) {
+    #box-texto h1, h4, p, a.btn {
+        margin-right: 0;
+    }
+    #box-img {
+        background-size: 100%;
+    }
+    .portifolio {
+        width: 640px;
+    }
+    .caixa {
+        width: 100%;
+    }
+    #habilidades {
+        width: 70%;
+    }
+    .linguagem p {
+        top: 46%;
+    }
+    .linguagem i {
+        font-size: 8rem;
+    }
+}
+@media screen and (max-width: 1350px) {
+    .html5 p, .css3 p, .bootstrap p, .js p, .php p {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 1250px) {
+    .php p {
+        bottom: 45%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #box-texto {
+        width: 100%;
+    }
+    #box-texto h1, h4, p, a.btn {
+        margin-right: 10%;
+    }
+    #box-img {
+        display: none;
+    }
+    #habilidades {
+        width: 90%;
+        margin-bottom: 4rem;
+    }
+    .linguagem i {
+        font-size: 7rem;
+    }
+    .barra {
+        display: none;
+    }
+    .html5:hover p, .css3:hover p, .bootstrap:hover p, .js:hover p, .php:hover p {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 850px) {
+    #habilidades {
+        width: 100%;
+    }
+    .linguagem i {
+        font-size: 5rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    .sobremim {
+        width: 90%;
+    }
+    .navbar a i {
+        margin-left: 1rem;
+    }
+    .linguagem i {
+        font-size: 4.5rem;
+        padding: 20px;
+        padding-bottom: 0;
+        text-shadow: 4px 4px #1b1815;
+    }
+    .linguagem span {
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .linguagem i {
+        font-size: 4rem;
+        padding: 15px;
+        padding-bottom: 0;
+    }
+    .portifolio {
+        width: 500px;
+    }
+    .texto h4 {
+        margin: 15px 5px 15px 15px;
+        font-size: 1.2rem;
+    }
+    .texto p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .botao {
+        margin-left: 100px;
+    }
+    .icones {
+        display: none;
+    }
+    .animacao {
+        padding-left: 0;
+    }
+}
