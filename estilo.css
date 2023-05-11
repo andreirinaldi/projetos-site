@@ -590,3 +590,95 @@ div.fundo-folhas div:nth-child(8) {
         padding-left: 0;
     }
 }
+@media screen and (max-width: 500px) {
+    #box-texto h1 {
+        font-size: 1.5rem;
+    }
+    #box-texto h4 {
+        font-size: 0.9rem;
+    }
+    #box-texto p {
+        font-size: 0.8rem;
+    }
+    .portifolio {
+        width: 375px;
+    }
+    .fundo-animated {
+        width: 375px;
+        height: 195px;
+    }
+    .fundo-animated::before {
+        width: 375px;
+        height: 195px;
+    }
+    .botao {
+        margin-left: 35px;
+    }
+    .linguagem i {
+        font-size: 3.5rem;
+        padding: 7px;
+        margin-top: 20px;
+        padding-bottom: 0;
+    }
+    .linguagem span {
+        font-size: 0.7rem;
+    }
+    .cursos {
+        width: 375px;
+        border: 1px solid var(--text-color);
+        border-radius: 25px;
+    }
+    .cursos h5 {
+        border-bottom: 1px solid var(--third-color);
+        margin-bottom: 1rem;
+        color: var(--third-color);
+    }
+    .cursos p {
+        font-size: 0.9rem;
+    }
+    .d-flex a {
+        margin-top: 0.5rem;
+        color: var(--second-color);
+        width: 10rem;
+    }
+}
+@media screen and (max-height: 900px) {
+    .portifolio h1 {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+    .portifolio span.aviso {
+        margin-bottom: 1.5rem;
+    }
+    .texto {
+        height: 120px;
+    }
+    .texto h4 {
+        margin: 15px 10px 15px 10px;
+        font-size: 1rem;
+    }
+    .texto p {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-height: 650px) {
+    .portifolio h1 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+    .portifolio span.aviso {
+        margin-bottom: 0.5rem;
+    }
+    .texto {
+        height: 100px;
+    }
+    .texto h4 {
+        margin: 5px 10px 5px 10px;
+        font-size: 1rem;
+    }
+    .texto p {
+        font-size: 0.8rem;
+        margin-left: 10px;
+    }
+}
