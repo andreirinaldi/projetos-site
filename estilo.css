@@ -662,7 +662,7 @@ div.fundo-folhas div:nth-child(8) {
         margin-left: 10px;
     }
 }
-@media screen and (max-height: 650px) {
+@media screen and (max-height: 700px) {
     .portifolio h1 {
         font-size: 1.5rem;
         margin-top: 0.5rem;
