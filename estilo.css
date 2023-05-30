@@ -90,7 +90,7 @@ section {
 #box-img {
 	display: flex;
     width: 50%;
-    background-image: url(img/foto_portifolio.png), url(img/botoes4.png);
+    background-image: url(img/foto_portifolio2.png), url(img/botoes4.png);
     background-position: center left, right;
     background-repeat: repeat-y, no-repeat;
     background-size: 85%, 38%;
