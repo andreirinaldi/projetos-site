@@ -156,6 +156,9 @@ section {
 .texto {
     height: 140px;
 }
+.texto a {
+    color: var(--third-color);
+}
 .texto h4 {
     margin: 25px 25px 15px 25px;
     color: var(--third-color);
