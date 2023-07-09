@@ -90,14 +90,14 @@ section {
 #box-img {
 	display: flex;
     width: 50%;
-    background-image: url(img/foto_portifolio2.png), url(img/botoes4.png);
-    background-position: center left, right;
-    background-repeat: repeat-y, no-repeat;
-    background-size: 85%, 38%;
+    background-image: url(img/fundo_foto.png), url(img/botoes4.png);
+    background-position: center right;
+    background-repeat: repeat-y;
+    background-size: 120%;
     border-radius: 40px;
 }
 
-/* ---------- Sessão Portifólio --------- */
+/* ---------- Sessão Portifólio ---------- */
 #box2 {
     background-color: #755348;
     position: relative;
@@ -155,9 +155,6 @@ section {
 }
 .texto {
     height: 140px;
-}
-.texto a {
-    color: var(--third-color);
 }
 .texto h4 {
     margin: 25px 25px 15px 25px;
@@ -665,7 +662,7 @@ div.fundo-folhas div:nth-child(8) {
         margin-left: 10px;
     }
 }
-@media screen and (max-height: 700px) {
+@media screen and (max-height: 650px) {
     .portifolio h1 {
         font-size: 1.5rem;
         margin-top: 0.5rem;
